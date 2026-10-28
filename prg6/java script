@@ -1,0 +1,54 @@
+
+<!Doctype html>
+<html>
+ <head>
+  <title></title>
+<style>
+
+
+body{
+text-align: center;
+
+background-color:black;
+color:#E5A93C;
+35px;
+}
+h1{
+font-weight:1000;
+}
+</style>
+</head>
+<body>
+<h1><u>STRING METHOD</u></h1>
+<h2>Javascript string method</h2>
+<script>
+let str="I am musfira";
+document.write(str+"<br>");
+document.write("Length of string:"+ str.length+"<br>");
+document.write("Index of first occurance of 'a' in a string: "+str.indexOf('a')+"<br>");
+document.write("Index of last occurance of 'a' in a string: "+str.lastIndexOf("a")+"<br>");
+document.write("Index of 'am' in a string:"+ str.indexOf("am")+"<br>");
+document.write("Index of 0 t 3 print using slice:"+ str.slice(0,3)+"<br>");
+document.write("To get substring of sring using substr:"+ str.substring(2,7)+ "<br>");
+document.write("String to uppercase:" + str.toUpperCase()+"<br>");
+document.write("replace musfira  in a string:"+str.replace("minu"+"anu")+"<br>");
+document.write("Use trim:" + str.trim() +"<br>");
+document.write("New string that have character 5 on string:"+ str.charAt(5)+"<br>");
+document.write("Print numeric ASCII value of character 5 on string:" + str.charCodeAt(5)+"<br>");
+document.write("<h1>MATH OBJECT</h1>");
+document.write("Math object is a building object,contains basic mathamatical functions and constents<br>");
+document.write("Value of PI in radian:"+Math.PI+"<br>");
+document.write("Pi in degree: 180"+(Math.PI * 180 / Math.PI)+"<br>");
+document.write("Value of E :"+Math.E+"<br>");
+document.write("Sign of -3,print 1 if it is a positve print -1 if it is negative or print 0 if it is zero -1"+Math.sign(8)+"<br>");
+document.write("Square root of a number 8 is:"+Math.sqrt(8)+"<br>");
+document.write("The second power of 8 is"+Math.pow(8,2)+"<br>");
+document.write("Round the value 6.7: "+Math.round(6,7)+"<br>");
+document.write("Round the value 4.6: "+Math.round(4,6)+"<br>");
+document.write("Ceil the value 4.4: "+Math.ceil(4.4)+"<br>");
+document.write("Ceil the value 4.6: "+Math.ceil(4.6)+"<br>");
+document.write("Floor value of the value 4.4 is: "+Math.floor(4.4)+"<br>");
+</script>
+</body>
+</html>
+
