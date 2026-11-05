@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Form Validation</title>
+<style>
+ body{ background: green; text-align:center;}
+ .btn{ background: cyan; padding: 8px 18px; border :none; border-radius:8px; cursor: pointer ; }
+</style>
+</head>
+<body>
+<h1>FORM VALIDATION</h1>
+
+<form name="form" onsubmit="return validate()">
+Name: <input type="text" name="name"><br><br>
+Email:<input type="text" name="email"><br><br>
+Mobile:<input type="text" name="mobile"><br><br>
+Username: <input type="text" name="user"><br><br>
+Password: <input type="password" name="password"><br><br>
+<input type="reset" class="btn" value="reset">
+<input type="submit" class="btn" value="submit">
+</form>
+
+<script>
+function validate(){
+ var name = document.form.name.value;
+ var email = document.form.email.value;
+ var mobile = document.form.mobile.value;
+ var user = document.form.user.value;
+ var password = document.form.password.value;
+ 
+ if(name == ""){
+  alert("Enter Name");
+  return false;
+  }
+ if(email == "" || !email.includes("@")){
+   alert("Enter valid Email");
+   return false;
+   }
+ if(mobiule == "" || isNaN(mobile) || mobile.length != 10){
+   alert("Enter 10 digit Mobile Number");
+   return false;
+   }
+ if(user == ""){
+   alert("Enter Username");
+   return false;
+ }
+if(password == "" || password.length < 8){
+  alert("Password must be 8 characters");
+  return false;
+ }
+
+ alert("Form has been submitted");
+ return true;
+ }
+ </script>
+ </body>
+ </html>
+
+ 
+        
+        
+        
+     
+        
+ 
+ 
